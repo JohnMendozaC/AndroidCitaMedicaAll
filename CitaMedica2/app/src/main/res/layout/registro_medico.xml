@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+
+    <!--cod_tarjetapro VARCHAR(45) NULL,
+  especialidad VARCHAR(45) NULL,
+  año_experiencia FLOAT NULL,
+  consultorio VARCHAR(45) NULL,
+  aten_domicilio boolean NULL,-->
+
+
+    <ScrollView
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Registro de Medico"
+                android:textAlignment="center"
+                android:textSize="30dp" />
+
+
+            <EditText
+                android:id="@+id/etTarjeta"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Codigo tarjeta profesional" />
+
+            <EditText
+                android:id="@+id/etEspeciliadad"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Especialidad" />
+
+            <EditText
+                android:id="@+id/etAnioExpe"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Años de experiencia"
+                android:inputType="number" />
+
+            <EditText
+                android:id="@+id/etConsultorio"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Consultorio" />
+
+            <CheckBox
+                android:id="@+id/cbAtencionDomicilio"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="80dp"
+                android:text="Atencion a domicilio"
+                android:textSize="20dp" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                >
+
+                <Button
+                    android:id="@+id/btnMedico"
+                    android:layout_width="100dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="100dp"
+                    android:text="Aceptar" />
+
+                <Button
+                    android:id="@+id/btnCancelarM"
+                    android:layout_width="100dp"
+                    android:layout_height="wrap_content"
+                    android:text="Cancelar" />
+            </LinearLayout>
+
+        </LinearLayout>
+    </ScrollView>
+
+</LinearLayout>

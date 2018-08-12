@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".view.SincronizarActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <de.hdodenhof.circleimageview.CircleImageView xmlns:app="http://schemas.android.com/apk/res-auto"
+            android:id="@+id/medico_image"
+            android:layout_width="96dp"
+            android:layout_height="96dp"
+            android:src="@drawable/cloud"
+            app:civ_border_color="#FF000000"
+            app:civ_border_width="2dp" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Parametrizar tiempo de sincronizacion"
+            android:textAlignment="center"
+            android:textSize="30dp" />
+    </LinearLayout>
+
+
+        <TimePicker
+            android:id="@+id/timePickerTask"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:datePickerMode="spinner"
+            android:spinnersShown="true"
+
+            />
+
+        <Button
+            android:id="@+id/btnSincronizar"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="guardar" />
+
+        <Button
+            android:id="@+id/btnSincronizarNow"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Subir ahora" />
+
+</LinearLayout>

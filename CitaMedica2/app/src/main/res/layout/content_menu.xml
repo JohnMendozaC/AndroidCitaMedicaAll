@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:context=".view.MenuActivity"
+    tools:showIn="@layout/app_bar_menu"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+        <de.hdodenhof.circleimageview.CircleImageView
+            xmlns:app="http://schemas.android.com/apk/res-auto"
+            android:id="@+id/medico_image"
+            android:layout_width="96dp"
+            android:layout_height="96dp"
+            android:src="@drawable/medico"
+            app:civ_border_width="2dp"
+            app:civ_border_color="#FF000000"/>
+        <Button
+            android:id="@+id/btnMedicosM"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="medicos"
+            android:layout_marginTop="20dp"
+            />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+        <de.hdodenhof.circleimageview.CircleImageView
+            xmlns:app="http://schemas.android.com/apk/res-auto"
+            android:id="@+id/paciente_image"
+            android:layout_width="96dp"
+            android:layout_height="96dp"
+            android:src="@drawable/paciente"
+            app:civ_border_width="2dp"
+            app:civ_border_color="#FF000000"/>
+        <Button
+            android:id="@+id/btnPacientesM"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="pacientes"
+            android:layout_marginTop="20dp"
+            />
+    </LinearLayout>
+
+
+
+
+</LinearLayout>

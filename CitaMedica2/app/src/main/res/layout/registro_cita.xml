@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <!--is_tratamiento boolean NULL,
+    val_cuotamod FLOAT NULL,
+    fyhnuevacita DATE NULL,
+    aten_cita boolean NULL,-->
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Registro de Cita"
+        android:textAlignment="center"
+        android:textSize="30dp" />
+
+    <TextView
+        android:id="@+id/tvMedico"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Seleccione Medico"
+        android:textAlignment="center"
+        android:textSize="20dp" />
+
+    <Spinner
+        android:id="@+id/opMedico"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@android:drawable/btn_dropdown"
+        android:spinnerMode="dropdown"/>
+
+    <CheckBox
+        android:id="@+id/cbIsTratamiento"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="true"
+        android:text="¿Esta en tratamiento?"
+        android:textSize="20dp" />
+
+
+    <EditText
+        android:id="@+id/etCuotaModeradora"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Valor cuota moderadora"
+        android:inputType="number" />
+
+
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Fecha de la cita"
+        android:textAlignment="center"
+        android:textSize="20dp" />
+
+    <EditText
+        android:id="@+id/cvFechaCita"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:inputType="datetime"
+        />
+
+    <CheckBox
+        android:id="@+id/cbAtencionCita"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="true"
+        android:text="¿Atendio a la cita? "
+        android:textSize="20dp" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/btnCita"
+            android:layout_width="100dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="100dp"
+            android:text="Aceptar" />
+
+        <Button
+            android:id="@+id/btnCancelarC"
+            android:layout_width="100dp"
+            android:layout_height="wrap_content"
+            android:text="Cancelar" />
+    </LinearLayout>
+
+</LinearLayout>
+
